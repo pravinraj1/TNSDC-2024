@@ -7,15 +7,12 @@ To get a copy of this project up and running on your local machine for developme
 Prerequisites
 Make sure you have Python 3.x installed on your machine. You'll also need to install the following Python packages:
 
-Copy code
 pip install torch torchvision matplotlib numpy
 Installation
 Clone the repository:
-bash
-Copy code
-git clone https://github.com/pavinraj1/mnist-cnn.git
+[git clone https://github.com/pavinraj1/mnist-cnn.git](https://github.com/pravinraj1/TNSDC-2024/blob/main/Handwritten_Digit_Recognition.ipynb)
+
 Navigate to the cloned repository:
-bash
 
 cd mnist-cnn
 Training the Model
