@@ -13,7 +13,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/mnist-cnn.git
+git clone https://github.com/pavinraj1/mnist-cnn.git
 Navigate to the cloned repository:
 bash
 
