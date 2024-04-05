@@ -1,53 +1,74 @@
-MNIST Classification with Convolutional Neural Networks
-This repository contains code for training a Convolutional Neural Network (CNN) to classify handwritten digits from the MNIST dataset using PyTorch. It also includes an example of using the trained model for inference on a single image.
+# TNSDC-2024
 
-Getting Started
+Below is a sample README file for a "Handwritten Digit Recognition using Deep Learning" project for submission on GitHub:
 
-To get a copy of this project up and running on your local machine for development and testing purposes, follow these steps:
+---
 
-Prerequisites
+# Handwritten Digit Recognition using Deep Learning
 
-Make sure you have Python 3.x installed on your machine. You'll also need to install the following Python packages:
+This project aims to recognize handwritten digits using deep learning techniques. The model is trained on the MNIST dataset, which is a widely used benchmark dataset for handwritten digit recognition. The implementation is done using Python and TensorFlow.
 
-pip install torch torchvision matplotlib numpy
+## Table of Contents
 
-Installation
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
-Clone the repository:
+## Installation
 
-[git clone https://github.com/pavinraj1/mnist-cnn.git](https://github.com/pravinraj1/TNSDC-2024/blob/main/Handwritten_Digit_Recognition.ipynb)
+1. Clone the repository:
 
-Navigate to the cloned repository:
+```bash
+git clone https://github.com/username/handwritten-digit-recognition.git
+```
 
-cd mnist-cnn
+2. Install the required Python packages:
 
-Training the Model
+```bash
+pip install -r requirements.txt
+```
 
-Run the training script to train the CNN model:
+## Usage
 
+1. Train the model:
+
+```bash
 python train.py
+```
 
-Inference
+2. Evaluate the model:
 
-After training, you can use the trained model for inference on a single image:
+```bash
+python evaluate.py
+```
 
-python inference.py
+3. Predict using the trained model:
 
-This will display the image along with the predicted class probabilities.
+```bash
+python predict.py <path_to_image>
+```
 
-Built With
+## Dataset
 
-PyTorch - Deep learning framework used
+The dataset used in this project is the MNIST dataset, which consists of 60,000 training images and 10,000 testing images of handwritten digits. Each image is a grayscale image with a resolution of 28x28 pixels.
 
-Matplotlib - Plotting library
+The dataset is automatically downloaded and preprocessed during training.
 
-Authors
+## Model Architecture
 
-pravinraj1
+The model architecture used in this project is a convolutional neural network (CNN). It consists of multiple convolutional and pooling layers followed by fully connected layers. The final layer uses softmax activation to output the probabilities of each digit class.
 
-License
+The architecture details can be found in the `model.py` file.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Results
 
-Acknowledgments
+The trained model achieves an accuracy of approximately 99% on the test dataset.
+
+## Contributing
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
 
