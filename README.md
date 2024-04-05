@@ -1,33 +1,41 @@
-# MNIST Classification with Convolutional Neural Networks
-
+MNIST Classification with Convolutional Neural Networks
 This repository contains code for training a Convolutional Neural Network (CNN) to classify handwritten digits from the MNIST dataset using PyTorch. It also includes an example of using the trained model for inference on a single image.
 
-## Requirements
+Getting Started
+To get a copy of this project up and running on your local machine for development and testing purposes, follow these steps:
 
-- Python 3.x
-- PyTorch
-- torchvision
-- Matplotlib
-- NumPy
+Prerequisites
+Make sure you have Python 3.x installed on your machine. You'll also need to install the following Python packages:
 
-You can install the required packages using pip:
-
+Copy code
 pip install torch torchvision matplotlib numpy
-## Usage
-
-1. Clone the repository:
-
-
-2. Navigate to the cloned repository:
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/mnist-cnn.git
+Navigate to the cloned repository:
+bash
 
 cd mnist-cnn
+Training the Model
+Run the training script to train the CNN model:
 
-3. Run the training script:
+python train.py
+Inference
+After training, you can use the trained model for inference on a single image:
 
 
+python inference.py
 This will display the image along with the predicted class probabilities.
 
-## Credits
+Built With
+PyTorch - Deep learning framework used
+Matplotlib - Plotting library
+Authors
+Your Name
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
+Acknowledgments
 This code is based on the MNIST classification tutorial provided in the PyTorch documentation.
-
