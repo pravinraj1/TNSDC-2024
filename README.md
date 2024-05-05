@@ -1,74 +1,53 @@
-# TNSDC-2024
+# Handwritten Digit Recognition using Convolutional Neural Networks
 
-Below is a sample README file for a "Handwritten Digit Recognition using Deep Learning" project for submission on GitHub:
+This repository contains code for training and evaluating a Convolutional Neural Network (CNN) model to recognize handwritten digits using the MNIST dataset.
 
----
+## Introduction
 
-# Handwritten Digit Recognition using Deep Learning
+Handwritten digit recognition is a classic problem in the field of computer vision and machine learning. The goal is to develop a model that can accurately classify images of handwritten digits into their corresponding numerical labels (0 to 9).
 
-This project aims to recognize handwritten digits using deep learning techniques. The model is trained on the MNIST dataset, which is a widely used benchmark dataset for handwritten digit recognition. The implementation is done using Python and TensorFlow.
+In this project, we utilize the MNIST dataset, which consists of grayscale images of handwritten digits, each of size 28x28 pixels. We employ a CNN architecture to learn discriminative features from the images and classify them into the correct digit classes.
 
-## Table of Contents
+## Setup
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+To run the code in this repository, follow these steps:
 
-## Installation
+1. Clone the repository to your local machine:
 
-1. Clone the repository:
+    ```bash
+    git clone https://github.com/pravinraj1/TNSDC-2024.git
+    ```
 
-```bash
-git clone https://github.com/username/handwritten-digit-recognition.git
-```
+2. Install the required dependencies. You can use the provided `requirements.txt` file to install the dependencies using pip:
 
-2. Install the required Python packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-```bash
-pip install -r requirements.txt
-```
+3. Run the Jupyter notebook or Python script to train the model, evaluate its performance, and make predictions.
+
+## Contents
+
+- `train_model.ipynb`: Jupyter notebook containing the code for training the CNN model on the MNIST dataset.
+- `predict.ipynb`: Jupyter notebook demonstrating how to make predictions using the trained model.
+- `model.py`: Python script defining the architecture of the CNN model.
+- `utils.py`: Python script containing utility functions for data loading and preprocessing.
+- `requirements.txt`: File specifying the required Python packages and their versions.
 
 ## Usage
 
-1. Train the model:
-
-```bash
-python train.py
-```
-
-2. Evaluate the model:
-
-```bash
-python evaluate.py
-```
-
-3. Predict using the trained model:
-
-```bash
-python predict.py <path_to_image>
-```
-
-## Dataset
-
-The dataset used in this project is the MNIST dataset, which consists of 60,000 training images and 10,000 testing images of handwritten digits. Each image is a grayscale image with a resolution of 28x28 pixels.
-
-The dataset is automatically downloaded and preprocessed during training.
-
-## Model Architecture
-
-The model architecture used in this project is a convolutional neural network (CNN). It consists of multiple convolutional and pooling layers followed by fully connected layers. The final layer uses softmax activation to output the probabilities of each digit class.
-
-The architecture details can be found in the `model.py` file.
+- `train_model.ipynb`: Open this notebook in Jupyter and execute each cell to train the CNN model. You can adjust hyperparameters, such as learning rate and batch size, as needed.
+- `predict.ipynb`: Use this notebook to make predictions on new handwritten digit images using the trained model. You can upload your own images or use sample images provided in the repository.
 
 ## Results
 
-The trained model achieves an accuracy of approximately 99% on the test dataset.
+After training the model, you can expect to achieve an accuracy of over 95% on the test set, indicating the model's ability to accurately classify handwritten digits.
 
-## Contributing
+## License
 
-Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Acknowledgments
+
+- The code in this repository is inspired by various tutorials and resources on deep learning and convolutional neural networks.
+- Special thanks to the creators of the MNIST dataset for providing a valuable resource for benchmarking machine learning models.
